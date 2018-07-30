@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>VMware vSphere API Reference</title>
+<script language="JavaScript" src="./commonRes.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="doc-style.css"/>
+</head>
+<body>
+<h1>New and Changed Managed Object Elements in 6.7</h1>
+<p>
+ The following sections list the new managed object API elements:
+<ul>
+<li><a href="#newMObjs">Managed objects</a></li>
+<li><a href="#newMethods">Methods</a></li>
+<li><a href="#newMObjProps">Properties</a></li>
+</ul>
+<h2><a name="newMObjs">New Managed Objects</a></h2>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th><strong>New Managed Objects</strong></th></tr>
+<tr><td><a href="vim.encryption.CryptoManagerHost.html">CryptoManagerHost</a></td></tr>
+<tr><td><a href="vim.encryption.CryptoManagerHostKMS.html">CryptoManagerHostKMS</a></td></tr>
+<tr><td><a href="vim.host.NvdimmSystem.html">HostNvdimmSystem</a></td></tr>
+</table>
+<h2><a name="newMethods">New Methods</a></h2>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th><strong>Managed Object</strong></th>
+<th><strong>Method</strong></th></tr>
+<tr><td><a href="vim.alarm.AlarmManager.html">AlarmManager</a></td>
+<td><a href="vim.alarm.AlarmManager.html#clearTriggeredAlarms">ClearTriggeredAlarms</a></td></tr>
+<tr><td><a href="vim.profile.host.HostProfile.html">HostProfile</a></td>
+<td><a href="vim.profile.host.HostProfile.html#ResetValidationState">HostProfileResetValidationState</a></td></tr>
+<tr><td><a href="vim.host.StorageSystem.html">HostStorageSystem</a></td>
+<td><a href="vim.host.StorageSystem.html#updateVmfsUnmapBandwidth">UpdateVmfsUnmapBandwidth</a></td></tr>
+<tr><td rowspan="8"><a href="vim.vslm.host.VStorageObjectManager.html">HostVStorageObjectManager</a></td>
+<td><a href="vim.vslm.host.VStorageObjectManager.html#clearVStorageObjectControlFlags">HostClearVStorageObjectControlFlags</a></td></tr>
+<td><a href="vim.vslm.host.VStorageObjectManager.html#retrieveVStorageInfrastructureObjectPolicy">HostRetrieveVStorageInfrastructureObjectPolicy</a></td></tr>
+<td><a href="vim.vslm.host.VStorageObjectManager.html#setVStorageObjectControlFlags">HostSetVStorageObjectControlFlags</a></td></tr>
+<td><a href="vim.vslm.host.VStorageObjectManager.html#createDiskFromSnapshot">HostVStorageObjectCreateDiskFromSnapshot_Task</a></td></tr>
+<td><a href="vim.vslm.host.VStorageObjectManager.html#createSnapshot">HostVStorageObjectCreateSnapshot_Task</a></td></tr>
+<td><a href="vim.vslm.host.VStorageObjectManager.html#deleteSnapshot">HostVStorageObjectDeleteSnapshot_Task</a></td></tr>
+<td><a href="vim.vslm.host.VStorageObjectManager.html#retrieveSnapshotInfo">HostVStorageObjectRetrieveSnapshotInfo</a></td></tr>
+<td><a href="vim.vslm.host.VStorageObjectManager.html#RevertVStorageObject">HostVStorageObjectRevert_Task</a></td></tr>
+<tr><td rowspan="2"><a href="vim.HttpNfcLease.html">HttpNfcLease</a></td>
+<td><a href="vim.HttpNfcLease.html#pullFromUrls">HttpNfcLeasePullFromUrls_Task</a></td></tr>
+<td><a href="vim.HttpNfcLease.html#setManifestChecksumType">HttpNfcLeaseSetManifestChecksumType</a></td></tr>
+<tr><td rowspan="2"><a href="vim.StorageResourceManager.html">StorageResourceManager</a></td>
+<td><a href="vim.StorageResourceManager.html#refreshRecommendationsForPod">RefreshStorageDrsRecommendationsForPod_Task</a></td></tr>
+<td><a href="vim.StorageResourceManager.html#validateStoragePodConfig">ValidateStoragePodConfig</a></td></tr>
+<tr><td rowspan="11"><a href="vim.vslm.vcenter.VStorageObjectManager.html">VcenterVStorageObjectManager</a></td>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#clearVStorageObjectControlFlags">ClearVStorageObjectControlFlags</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#createDiskFromSnapshot">CreateDiskFromSnapshot_Task</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#deleteSnapshot">DeleteSnapshot_Task</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#retrieveSnapshotInfo">RetrieveSnapshotInfo</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#retrieveVStorageInfrastructureObjectPolicy">RetrieveVStorageInfrastructureObjectPolicy</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#retrieveVStorageObjectAssociations">RetrieveVStorageObjectAssociations</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#RevertVStorageObject">RevertVStorageObject_Task</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#setVStorageObjectControlFlags">SetVStorageObjectControlFlags</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#updateVStorageInfrastructureObjectPolicy">UpdateVStorageInfrastructureObjectPolicy_Task</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#updateVStorageObjectPolicy">UpdateVStorageObjectPolicy_Task</a></td></tr>
+<td><a href="vim.vslm.vcenter.VStorageObjectManager.html#createSnapshot">VStorageObjectCreateSnapshot_Task</a></td></tr>
+<tr><td rowspan="3"><a href="vim.VirtualMachine.html">VirtualMachine</a></td>
+<td><a href="vim.VirtualMachine.html#applyEvcMode">ApplyEvcModeVM_Task</a></td></tr>
+<td><a href="vim.VirtualMachine.html#cryptoUnlock">CryptoUnlock_Task</a></td></tr>
+<td><a href="vim.VirtualMachine.html#instantClone">InstantClone_Task</a></td></tr>
+<tr><td rowspan="2"><a href="vim.vm.check.CompatibilityChecker.html">VirtualMachineCompatibilityChecker</a></td>
+<td><a href="vim.vm.check.CompatibilityChecker.html#checkPowerOn">CheckPowerOn_Task</a></td></tr>
+<td><a href="vim.vm.check.CompatibilityChecker.html#checkVmConfig">CheckVmConfig_Task</a></td></tr>
+<tr><td><a href="vim.vm.check.ProvisioningChecker.html">VirtualMachineProvisioningChecker</a></td>
+<td><a href="vim.vm.check.ProvisioningChecker.html#checkInstantClone">CheckInstantClone_Task</a></td></tr>
+</table>
+<h2><a name="newMObjProps">New Managed Object Properties</a></h2><table border="1" cellpadding="5" cellspacing="0"><tr><th><strong>Managed Object</strong></th><th><strong>Property</strong></th></tr><tr><td><a href="vim.host.GraphicsManager.html">HostGraphicsManager</a></td>
+<td><a href="vim.host.GraphicsManager.html#sharedGpuCapabilities">sharedGpuCapabilities</a></td></tr>
+<tr><td rowspan="3"><a href="vim.profile.host.HostProfile.html">HostProfile</a></td>
+<td><a href="vim.profile.host.HostProfile.html#validationFailureInfo">validationFailureInfo</a></td></tr>
+<td><a href="vim.profile.host.HostProfile.html#validationState">validationState</a></td></tr>
+<td><a href="vim.profile.host.HostProfile.html#validationStateUpdateTime">validationStateUpdateTime</a></td></tr>
+<tr><td rowspan="7"><a href="vim.HostSystem.html">HostSystem</a></td>
+<td><a href="vim.HostSystem.html#answerFileValidationResult">answerFileValidationResult</a></td></tr>
+<td><a href="vim.HostSystem.html#answerFileValidationState">answerFileValidationState</a></td></tr>
+<td><a href="vim.HostSystem.html#complianceCheckResult">complianceCheckResult</a></td></tr>
+<td><a href="vim.HostSystem.html#complianceCheckState">complianceCheckState</a></td></tr>
+<td><a href="vim.HostSystem.html#precheckRemediationResult">precheckRemediationResult</a></td></tr>
+<td><a href="vim.HostSystem.html#remediationResult">remediationResult</a></td></tr>
+<td><a href="vim.HostSystem.html#remediationState">remediationState</a></td></tr>
+<tr><td rowspan="3"><a href="vim.HttpNfcLease.html">HttpNfcLease</a></td>
+<td><a href="vim.HttpNfcLease.html#capabilities">capabilities</a></td></tr>
+<td><a href="vim.HttpNfcLease.html#mode">mode</a></td></tr>
+<td><a href="vim.HttpNfcLease.html#transferProgress">transferProgress</a></td></tr>
+</table>
+<p>
+<script language="javascript" type="text/javascript">document.write(ID_Copyright);</script>
+<br><script language="javascript" type="text/javascript">document.write(ID_VersionInformation);</script>
+</p>
+</body>
+</html>
