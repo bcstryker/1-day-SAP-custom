@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>VMware vSphere API Reference</title>
+<script language="JavaScript" src="./commonRes.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="doc-style.css"/>
+</head>
+<body>
+<h1>New and Changed Enumerated Type Elements in 6.5</h1>
+<p>
+ The following sections list the new enumerated type API elements:
+<ul>
+<li><a href="#newEnums">Enumerated Types</a></li>
+<li><a href="#newConstants">Enumerated Type Constants</a></li>
+</ul>
+<h2><a name="newEnums">New Enumerated Types</a></h2>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th><strong>New Enumerated Types</strong></th></tr>
+<tr><td><a href="vim.vslm.BaseConfigInfo.DiskFileBackingInfo.ProvisioningType.html">BaseConfigInfoDiskFileBackingInfoProvisioningType</a></td></tr>
+<tr><td><a href="vim.cluster.HostInfraUpdateHaModeAction.OperationType.html">ClusterHostInfraUpdateHaModeActionOperationType</a></td></tr>
+<tr><td><a href="vim.cluster.InfraUpdateHaConfigInfo.BehaviorType.html">ClusterInfraUpdateHaConfigInfoBehaviorType</a></td></tr>
+<tr><td><a href="vim.cluster.InfraUpdateHaConfigInfo.RemediationType.html">ClusterInfraUpdateHaConfigInfoRemediationType</a></td></tr>
+<tr><td><a href="vim.cluster.VmReadiness.ReadyCondition.html">ClusterVmReadinessReadyCondition</a></td></tr>
+<tr><td><a href="vim.event.DvsEvent.PortBlockState.html">DvsEventPortBlockState</a></td></tr>
+<tr><td><a href="vim.HealthUpdateInfo.ComponentType.html">HealthUpdateInfoComponentType</a></td></tr>
+<tr><td><a href="vim.HostSystem.CryptoState.html">HostCryptoState</a></td></tr>
+<tr><td><a href="vim.host.GraphicsConfig.GraphicsType.html">HostGraphicsConfigGraphicsType</a></td></tr>
+<tr><td><a href="vim.host.GraphicsConfig.SharedPassthruAssignmentPolicy.html">HostGraphicsConfigSharedPassthruAssignmentPolicy</a></td></tr>
+<tr><td><a href="vim.host.ProtocolEndpoint.ProtocolEndpointType.html">HostProtocolEndpointProtocolEndpointType</a></td></tr>
+<tr><td><a href="vim.host.VmfsVolume.UnmapPriority.html">HostVmfsVolumeUnmapPriority</a></td></tr>
+<tr><td><a href="vim.IoFilterManager.IoFilterType.html">IoFilterType</a></td></tr>
+<tr><td><a href="vim.fault.QuarantineModeFault.FaultType.html">QuarantineModeFaultFaultType</a></td></tr>
+<tr><td><a href="vim.host.ScsiDisk.ScsiDiskType.html">ScsiDiskType</a></td></tr>
+<tr><td><a href="vim.host.SoftwarePackage.Constraint.html">SoftwarePackageConstraint</a></td></tr>
+<tr><td><a href="vim.host.SoftwarePackage.VibType.html">SoftwarePackageVibType</a></td></tr>
+<tr><td><a href="vim.dvs.VmwareDistributedVirtualSwitch.VspanSessionEncapType.html">VMwareDVSVspanSessionEncapType</a></td></tr>
+<tr><td><a href="vim.vslm.VStorageObject.ConsumptionType.html">VStorageObjectConsumptionType</a></td></tr>
+<tr><td><a href="vim.vcha.FailoverClusterManager.VchaClusterMode.html">VchaClusterMode</a></td></tr>
+<tr><td><a href="vim.vcha.FailoverClusterManager.VchaClusterState.html">VchaClusterState</a></td></tr>
+<tr><td><a href="vim.vcha.FailoverClusterManager.VchaNodeRole.html">VchaNodeRole</a></td></tr>
+<tr><td><a href="vim.vcha.FailoverClusterManager.VchaNodeState.html">VchaNodeState</a></td></tr>
+<tr><td><a href="vim.vcha.FailoverClusterConfigurator.VchaState.html">VchaState</a></td></tr>
+<tr><td><a href="vim.vm.ConfigSpec.EncryptedVMotionModes.html">VirtualMachineConfigSpecEncryptedVMotionModes</a></td></tr>
+<tr><td><a href="vim.vm.GuestInfo.ToolsInstallType.html">VirtualMachineToolsInstallType</a></td></tr>
+<tr><td><a href="vim.vm.WindowsQuiesceSpec.VssBackupContext.html">VirtualMachineWindowsQuiesceSpecVssBackupContext</a></td></tr>
+</table>
+<h2><a name="newConstants">New Enumerated Type Constants</a></h2>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr><th><strong>Enumerated Type</strong></th>
+<th><strong>Enumerated Type Constant</strong></th></tr>
+<tr><td><a href="vim.cluster.Action.ActionType.html">ActionType</a></td>
+<td><a href="vim.cluster.Action.ActionType.html#HostInfraUpdateHaV1">HostInfraUpdateHaV1</a></td></tr>
+<tr><td rowspan="2"><a href="vim.cluster.DasVmSettings.RestartPriority.html">ClusterDasVmSettingsRestartPriority</a></td>
+<td><a href="vim.cluster.DasVmSettings.RestartPriority.html#highest">highest</a></td></tr>
+<td><a href="vim.cluster.DasVmSettings.RestartPriority.html#lowest">lowest</a></td></tr>
+<tr><td><a href="vim.host.GraphicsInfo.GraphicsType.html">HostGraphicsInfoGraphicsType</a></td>
+<td><a href="vim.host.GraphicsInfo.GraphicsType.html#sharedDirect">sharedDirect</a></td></tr>
+<tr><td><a href="vim.host.NasVolume.SecurityType.html">HostNasVolumeSecurityType</a></td>
+<td><a href="vim.host.NasVolume.SecurityType.html#SEC_KRB5I">SEC_KRB5I</a></td></tr>
+<tr><td rowspan="8"><a href="vim.host.NumericSensorInfo.SensorType.html">HostNumericSensorType</a></td>
+<td><a href="vim.host.NumericSensorInfo.SensorType.html#battery">battery</a></td></tr>
+<td><a href="vim.host.NumericSensorInfo.SensorType.html#bios">bios</a></td></tr>
+<td><a href="vim.host.NumericSensorInfo.SensorType.html#cable">cable</a></td></tr>
+<td><a href="vim.host.NumericSensorInfo.SensorType.html#memory">memory</a></td></tr>
+<td><a href="vim.host.NumericSensorInfo.SensorType.html#processor">processor</a></td></tr>
+<td><a href="vim.host.NumericSensorInfo.SensorType.html#storage">storage</a></td></tr>
+<td><a href="vim.host.NumericSensorInfo.SensorType.html#systemBoard">systemBoard</a></td></tr>
+<td><a href="vim.host.NumericSensorInfo.SensorType.html#watchdog">watchdog</a></td></tr>
+<tr><td><a href="vim.host.VirtualNicManager.NicType.html">HostVirtualNicManagerNicType</a></td>
+<td><a href="vim.host.VirtualNicManager.NicType.html#vsanWitness">vsanWitness</a></td></tr>
+<tr><td rowspan="4"><a href="vim.cluster.Recommendation.ReasonCode.html">RecommendationReasonCode</a></td>
+<td><a href="vim.cluster.Recommendation.ReasonCode.html#ftConstraints">ftConstraints</a></td></tr>
+<td><a href="vim.cluster.Recommendation.ReasonCode.html#hostExitDegradation">hostExitDegradation</a></td></tr>
+<td><a href="vim.cluster.Recommendation.ReasonCode.html#hostInDegradation">hostInDegradation</a></td></tr>
+<td><a href="vim.cluster.Recommendation.ReasonCode.html#maxVmsConstraint">maxVmsConstraint</a></td></tr>
+<tr><td><a href="vim.fault.ReplicationVmConfigFault.ReasonForFault.html">ReplicationVmConfigFaultReasonForFault</a></td>
+<td><a href="vim.fault.ReplicationVmConfigFault.ReasonForFault.html#encryptedVm">encryptedVm</a></td></tr>
+<tr><td><a href="vim.fault.ReplicationVmFault.ReasonForFault.html">ReplicationVmFaultReasonForFault</a></td>
+<td><a href="vim.fault.ReplicationVmFault.ReasonForFault.html#closeDiskError">closeDiskError</a></td></tr>
+<tr><td rowspan="17"><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html">VirtualMachineGuestOsIdentifier</a></td>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#asianux7_64Guest">asianux7_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#centos6Guest">centos6Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#centos6_64Guest">centos6_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#centos7Guest">centos7Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#centos7_64Guest">centos7_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#darwin15_64Guest">darwin15_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#darwin16_64Guest">darwin16_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#debian10Guest">debian10Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#debian10_64Guest">debian10_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#debian9Guest">debian9Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#debian9_64Guest">debian9_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#oracleLinux6Guest">oracleLinux6Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#oracleLinux6_64Guest">oracleLinux6_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#oracleLinux7Guest">oracleLinux7Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#oracleLinux7_64Guest">oracleLinux7_64Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#vmkernel65Guest">vmkernel65Guest</a></td></tr>
+<td><a href="vim.vm.GuestOsDescriptor.GuestOsIdentifier.html#vmwarePhoton64Guest">vmwarePhoton64Guest</a></td></tr>
+</table>
+<p>
+<script language="javascript" type="text/javascript">document.write(ID_Copyright);</script>
+<br><script language="javascript" type="text/javascript">document.write(ID_VersionInformation);</script>
+</p>
+</body>
+</html>
