@@ -1,0 +1,20 @@
+- Redhat Ansible Quickstart
+https://www.ansible.com/resources/videos/quick-start-video
+
+- Redhat Ansible Playbooks
+https://www.redhat.com/en/about/videos/introduction-ansible-playbooks#
+
+- Three part series on Ansible
+https://www.youtube.com/watch?v=icR-df2Olm8
+
+- Ansible Documentation (for network automation)
+https://docs.ansible.com/ansible/latest/network/index.html
+
+- List of Vmware modules available in Ansible
+https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#vmware
+
+- Ansible adhoc commands
+https://docs.ansible.com/ansible/devel/user_guide/intro_adhoc.html
+
+- pyVmomi community samples
+https://github.com/vmware/pyvmomi-community-samples
